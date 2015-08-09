@@ -1,6 +1,6 @@
 /*
-  Listing 4-2 ( page 79 ) of Programming linux games
-  converted to SDL2 by Jaime Ortiz
+  Listing 4-2 ( page 79 ) of Programming Linux Games
+  converted to SDL2 by Jaime Ortiz. July 2015.
  */
 
 #ifdef WINDOWS
