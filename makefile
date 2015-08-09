@@ -8,7 +8,7 @@ CLIBSL=-LSDL2
 CCW=cl
 CFLAGSW=/MD
 CINCW=/I"c:\\SDL2\\src\\SDL2-2.0.3\\include\\"
-CLIBW=/link /LIBPATH:"C:\SDL2\src\SDL2-2.0.3\lib\x64" SDL2.lib SDL2main.lib
+CLIBW=/link /LIBPATH:"C:\SDL2\src\SDL2-2.0.3\lib\x64" SDL2.lib SDL2main.lib SDL2_image.lib
 CO=/subsystem:console
 CDEFS=/DWINDOWS
 
