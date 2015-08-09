@@ -1,5 +1,5 @@
 /*
-  Listing 4-3 ( page 84 ) of Programming linux games
+  Listing 4-3 ( page 84 ) of Programming Linux Games
   converted to SDL2 by Jaime Ortiz.  August 2, 2015
  */
 
@@ -74,6 +74,8 @@ int main( int argc, char **argv )
 	SDL_Delay( 5000 );
 
 	SDL_FreeSurface( image );
+
+	SDL_DestroyWindow( window );
 	
 	return 0;
 }
