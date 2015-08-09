@@ -22,8 +22,6 @@ set CLIBW=/link /LIBPATH:"C:\\SDL2\\src\\SDL2-2.0.3\\lib\\x64" SDL2.lib SDL2main
 set CO=/subsystem:console
 set CDEFS=/DWINDOWS
 
-
-
 :: SDL EXAMPLES
 
 if "%1" == "initsdl" (
@@ -57,7 +55,7 @@ if "%1" == "alpha" (
 )
 
 if "%1" == "anim1" (
-   set SRC=anim1.c
+   set SRC=smooth_animation_1.c
    set OUT=c4_6_anim1.exe
    goto COMPILERCOMMAND
 )
