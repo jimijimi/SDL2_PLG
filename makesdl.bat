@@ -60,6 +60,19 @@ if "%1" == "anim1" (
    goto COMPILERCOMMAND
 )
 
+if "%1" == "anim2" (
+   set SRC=smooth_animation_2.c
+   set OUT=c4_7_anim2.exe
+   goto COMPILERCOMMAND
+)
+
+if "%1" == "anim2_1" (
+   set SRC=smooth_animation_2_1.c
+   set OUT=c4_7_anim2_1.exe
+   goto COMPILERCOMMAND
+)
+
+
 echo targets:
 echo      initsdl
 echo      pixeldrawing
@@ -67,7 +80,7 @@ echo      blittingsurf
 echo      colorkey
 echo      alpha
 echo      anim1
-
+echo      anim2
 
 goto EXIT
 
