@@ -1,5 +1,6 @@
 :: windows bat file that tries to replicate the makefile behavior
 :: 2015 (c) J.Ortiz -- See copying file for license information.
+:: Last update: August 10, 2015.
 
 :: usage: make [case] <enter>
 :: to see the list of cases, type makesdl <enter>
@@ -72,6 +73,23 @@ if "%1" == "anim2_1" (
    goto COMPILERCOMMAND
 )
 
+if "%1" == "mouse" (
+   set SRC=mouse_sdl.c
+   set OUT=c4_8_mouse.exe
+   goto COMPILERCOMMAND
+)
+
+if "%1" == "keyboard" (
+   set SRC=keyboard_sdl.c
+   set OUT=c4_9_keyboard.exe
+   goto COMPILERCOMMAND
+)
+
+if "%1" == "joystick" (
+   set SRC=joystick_sdl.c
+   set OUT=c4_10_joystick.exe
+   goto COMPILERCOMMAND
+)
 
 echo targets:
 echo      initsdl
@@ -81,6 +99,10 @@ echo      colorkey
 echo      alpha
 echo      anim1
 echo      anim2
+echo      anim21
+echo      mouse
+echo      keyboard
+echo      joystick
 
 goto EXIT
 
