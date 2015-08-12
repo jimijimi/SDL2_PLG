@@ -91,6 +91,12 @@ if "%1" == "joystick" (
    goto COMPILERCOMMAND
 )
 
+if "%1" == "threads" {
+   set SRC=threads_sdl.c
+   set OUT=c4_11_threads.exe
+   goto COMPILERCOMMAND
+}
+
 echo targets:
 echo      initsdl
 echo      pixeldrawing
@@ -103,6 +109,8 @@ echo      anim21
 echo      mouse
 echo      keyboard
 echo      joystick
+echo      threads
+
 
 goto EXIT
 
