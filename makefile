@@ -15,6 +15,20 @@ CDEFS=/DWINDOWS
 
 all:
 	@echo "Hello"
+	echo targets
+	echo      initsdl
+	echo      pixeldrawing
+	echo      blittingsurf
+	echo      colorkey
+	echo      alpha
+	echo      anim1
+	echo      anim2
+	echo      anim21
+	echo      mouse
+	echo      keyboard
+	echo      joystick
+	echo      threads
+
 
 initsdl_linux:
 	$(CCL) \
