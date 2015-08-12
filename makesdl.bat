@@ -27,61 +27,61 @@ set CDEFS=/DWINDOWS
 
 if "%1" == "initsdl" (
    set SRC=initializing_sdl.c
-   set OUT=c4_1_initsdl.exe
+   set OUT=c4_01_initsdl.exe
    goto COMPILERCOMMAND
 )
 
 if "%1" == "pixeldrawing" (
    set SRC=direct_pixel_drawing_sdl.c
-   set OUT=c4_2_pixeldrawing.exe
+   set OUT=c4_02_pixeldrawing.exe
    goto COMPILERCOMMAND
 )
 
 if "%1" == "blittingsurf" (
    set SRC=blitting_surfaces_sdl.c
-   set OUT=c4_3_blitsurf.exe
+   set OUT=c4_03_blitsurf.exe
    goto COMPILERCOMMAND
 )
 
 if "%1" == "colorkey" (
    set SRC=colorkeys_sdl.c
-   set OUT=c4_4_colorkeys.exe
+   set OUT=c4_04_colorkeys.exe
    goto COMPILERCOMMAND
 )
 
 if "%1" == "alpha" (
    set SRC=alpha_sdl.c
-   set OUT=c4_5_alpha.exe
+   set OUT=c4_05_alpha.exe
    goto COMPILERCOMMAND
 )
 
 if "%1" == "anim1" (
    set SRC=smooth_animation_1.c
-   set OUT=c4_6_anim1.exe
+   set OUT=c4_06_anim1.exe
    goto COMPILERCOMMAND
 )
 
 if "%1" == "anim2" (
    set SRC=smooth_animation_2.c
-   set OUT=c4_7_anim2.exe
+   set OUT=c4_07_anim2.exe
    goto COMPILERCOMMAND
 )
 
 if "%1" == "anim2_1" (
    set SRC=smooth_animation_2_1.c
-   set OUT=c4_7_anim2_1.exe
+   set OUT=c4_07_anim2_1.exe
    goto COMPILERCOMMAND
 )
 
 if "%1" == "mouse" (
    set SRC=mouse_sdl.c
-   set OUT=c4_8_mouse.exe
+   set OUT=c4_08_mouse.exe
    goto COMPILERCOMMAND
 )
 
 if "%1" == "keyboard" (
    set SRC=keyboard_sdl.c
-   set OUT=c4_9_keyboard.exe
+   set OUT=c4_09_keyboard.exe
    goto COMPILERCOMMAND
 )
 
