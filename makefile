@@ -20,7 +20,7 @@ initsdl_linux:
 	$(CCL) \
 	$(CFLAGSL) \
 	initializing_sdl.c \
-	-o c4_1_initsdl \
+	-o c4_01_initsdl \
 	$(CLIBSL)
 
 initsdl_win:
@@ -28,7 +28,7 @@ initsdl_win:
 	$(CFLAGSW) \
 	$(CDEFS) $(CINCW) \
 	initializing_sdl.c \
-	/Fe"c4_1_initsdl.exe" \
+	/Fe"c4_01_initsdl.exe" \
 	$(CLIBW) $(CO)
 
 #
@@ -37,7 +37,7 @@ pixeldrawing_linux:
 	$(CCL) \
 	$(CFLAGSL) \
 	direct_pixel_drawing_sdl.c \
-	-o c4_2_pixeldrawing \
+	-o c4_02_pixeldrawing \
 	$(CLIBSL)
 
 pixeldrawing_win:
@@ -45,7 +45,7 @@ pixeldrawing_win:
 	$(CFLAGSW) \
 	$(CDEFS) $(CINCW) \
 	direct_pixel_drawing_sdl.c \
-	/Fe"c4_2_pixeldrawing.exe" \
+	/Fe"c4_02_pixeldrawing.exe" \
 	$(CLIBW) $(CO)
 
 
@@ -55,7 +55,7 @@ blittingsurf_linux:
 	$(CCL) \
 	$(CFLAGSL) \
 	blitting_surface_sdl.c \
-	-o c4_3_blitting_surf \
+	-o c4_03_blitting_surf \
 	$(CLIBSL)
 
 blittingsurf_win:
@@ -63,8 +63,41 @@ blittingsurf_win:
 	$(CFLAGSW) \
 	$(CDEFS) $(CINCW) \
 	blitting_surface_sdl.c \
-	/Fe"c4_3_blittingsurf.exe" \
+	/Fe"c4_03_blittingsurf.exe" \
 	$(CLIBW) $(CO)
 
 
+#
+
+colorkey_linux:
+	$(CCL) \
+	$(CFLAGSL) \
+	colorkeys_sdl.c \
+	-o c4_04_colorkeys \
+	$(CLIBSL)
+
+colorkey_win:
+	$(CCW) \
+	$(CFLAGSW) \
+	$(CDEFS) $(CINCW) \
+	colorkeys_sdl.c \
+	/Fe"c4_04_colorkeys.exe" \
+	$(CLIBW) $(CO)
+
+#
+
+alpha_linux:
+	$(CCL) \
+	$(CFLAGSL) \
+	alpha_sdl.c \
+	-o c4_05_alpha \
+	$(CLIBSL)
+
+alpha_win:
+	$(CCW) \
+	$(CFLAGSW) \
+	$(CDEFS) $(CINCW) \
+	alpha_sdl.c \
+	/Fe"c4_05_alpha.exe" \
+	$(CLIBW) $(CO)
 
