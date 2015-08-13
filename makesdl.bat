@@ -91,11 +91,18 @@ if "%1" == "joystick" (
    goto COMPILERCOMMAND
 )
 
-if "%1" == "threads" {
+if "%1" == "threads" (
    set SRC=threads_sdl.c
    set OUT=c4_11_threads.exe
    goto COMPILERCOMMAND
-}
+)
+
+if "%1" == "sound" (
+   set SRC=sound_sdl.c
+   set OUT=c4_12_sound.exe
+   goto COMPILERCOMMAND
+)
+
 
 echo targets:
 echo      initsdl
@@ -110,7 +117,7 @@ echo      mouse
 echo      keyboard
 echo      joystick
 echo      threads
-
+echo      sound
 
 goto EXIT
 
