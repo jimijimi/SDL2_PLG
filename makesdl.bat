@@ -19,7 +19,7 @@
 
 set CFLAGS=/MD
 set CINCW=/I"c:\\SDL2\\src\\SDL2-2.0.3\\include"
-set CLIBW=/link /LIBPATH:"C:\\SDL2\\src\\SDL2-2.0.3\\lib\\x64" SDL2.lib SDL2main.lib SDL2_image.lib
+set CLIBW=/link /LIBPATH:"C:\\SDL2\\src\\SDL2-2.0.3\\lib\\x64" SDL2.lib SDL2main.lib SDL2_image.lib SDL2_mixer.lib
 set CO=/subsystem:console
 set CDEFS=/DWINDOWS
 
@@ -67,7 +67,7 @@ if "%1" == "anim2" (
    goto COMPILERCOMMAND
 )
 
-if "%1" == "anim2_1" (
+if "%1" == "anim21" (
    set SRC=smooth_animation_2_1.c
    set OUT=c4_07_anim2_1.exe
    goto COMPILERCOMMAND
@@ -99,6 +99,12 @@ if "%1" == "threads" (
 
 if "%1" == "sound" (
    set SRC=sound_sdl.c
+   set OUT=c4_12_sound.exe
+   goto COMPILERCOMMAND
+)
+
+if "%1" == "soundmixer" (
+   set SRC=sound_1_sdl.c
    set OUT=c4_12_sound.exe
    goto COMPILERCOMMAND
 )
