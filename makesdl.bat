@@ -22,6 +22,8 @@ set CINCW=/I"c:\\SDL2\\src\\SDL2-2.0.3\\include"
 set CLIBW=/link /LIBPATH:"C:\\SDL2\\src\\SDL2-2.0.3\\lib\\x64" SDL2.lib SDL2main.lib SDL2_image.lib SDL2_mixer.lib
 set CO=/subsystem:console
 set CDEFS=/DWINDOWS
+set CLIBGL=opengl32.lib
+
 
 :: SDL EXAMPLES
 
@@ -109,6 +111,12 @@ if "%1" == "soundmixer" (
    goto COMPILERCOMMAND
 )
 
+if "%1" == "opengl" (
+   set SRC=opengl_sdl.c
+   set OUT=c4_13_opengl.exe
+   goto	COMPILERCOMMAND_OPENGL
+)
+
 
 echo targets:
 echo      initsdl
@@ -124,16 +132,28 @@ echo      keyboard
 echo      joystick
 echo      threads
 echo      sound
+echo      opengl
 
 goto EXIT
 
 :COMPILERCOMMAND
 
-cl %CFLAGS% %CDEFS% %CINCW% %SRC% /Fe%OUT% %CLIBW% %CO% %CIMG%
+cl %CFLAGS% %CDEFS% %CINCW% %SRC% /Fe%OUT% %CLIBW% %CO%
+goto OPER
+
+
+:COMPILERCOMMAND_OPENGL
+
+cl %CFLAGS% %CDEFS% %CINCW% %SRC% /Fe%OUT% %CLIBW% %CO% %CLIBGL%
+goto OPER
+
+:OPER
 
 md objs
 md exes
 move *obj objs\
 move *exe exes\
+
+
 
 :EXIT
